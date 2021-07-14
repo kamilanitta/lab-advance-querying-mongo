@@ -14,6 +14,7 @@ db.companies.find(
 db.companies.find(
 {number_of_employees: {$gt: 5000}}
 ).limit(20)
+.sort({number_of_employees:1})
 
 ### 3. All the companies founded between 2000 and 2005, both years included. Retrieve only the `name` and `founded_year` fields.
 
